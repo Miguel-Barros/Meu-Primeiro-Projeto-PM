@@ -4,112 +4,56 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-  
-  <!-- Scripts -->
   <script src="components/loader.js"></script>
   <script src="lib/jquery-3.6.0.min.js"></script>
-  <script src="components/acao.js"></script>
+  <script src="components/plugins.js"></script>
 
-  <!-- Estilos -->
+  <!-- map quest -->
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+
   <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/bootstrap-4.6.0-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-
   <div class="container">
+     <div class="row">
+      <div class="col-sm">
+        <h3> Plugins </h3>
+      </div>
+    </div>
     <div class="row">
-      <div class="col-12">
-        <div class="jumbotron">
-          <h2>Calcular</h2>
-        </div>
+      <div class="col-sm">
+        <button class="btn btn-primary btn-block" id="alerta"> Alerta </button>
       </div>
     </div>
-
     <div class="row">
-      <div class="col-12">
-        <div class="form-group">
-          <label for="">Valor 1:</label>
-          <input type="number" name="" class="form-control" id="valor1">
-        </div>
+      <div class="col-sm">
+        <button class="btn btn-primary btn-block" id="confirm"> Confirm </button>
       </div>
     </div>
-
     <div class="row">
-      <div class="col-12">
-        <div class="form-group">
-          <label for="">Valor 2:</label>
-          <input type="number" name="" class="form-control" id="valor2">
-        </div>
+      <div class="col-sm">
+        <button class="btn btn-primary btn-block" id="beep"> Beep </button>
       </div>
     </div>
-
     <div class="row">
-      <div class="col-12">
-        <div class="form-group">
-          <label for="">Resultado:</label>
-          <input type="text" name="" class="form-control" readonly id="resultado">
-        </div>
+      <div class="col-sm">
+        <button class="btn btn-primary btn-block" id="vibrar"> Vibrar </button>
       </div>
     </div>
-
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-secondary active">
-        <input type="radio" name="options" id="somar" autocomplete="off" checked> Somar
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="subtrair" autocomplete="off"> Subtrair
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="multiplicar" autocomplete="off"> Multiplicar
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="dividir" autocomplete="off"> dividir
-      </label>
-    </div>
-
     <div class="row">
-      <div class="col-12">
-        <div class="form-group">
-          <button class="btn btn-primary btn-block" id="calcular">Calcular</button>
-        </div>
+      <div class="col-sm">
+        <button class="btn btn-primary btn-block" id="local"> Local </button>
       </div>
     </div>
-
-    <!-- <div class="row">
-      <div class="col-12">
-        <div class="form-group">
-          <button class="btn btn-primary btn-block" id="somar">Somar</button>
-        </div>
-      </div>
-    </div>
-
     <div class="row">
-      <div class="col-12">
-        <div class="form-group">
-          <button class="btn btn-primary btn-block" id="subtrair">Subtrair</button>
+      <div class="col-sm">
+        <div class="map" id="map">
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-12">
-        <div class="form-group">
-          <button class="btn btn-primary btn-block" id="dividir">Dividir</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <div class="form-group">
-          <button class="btn btn-primary btn-block" id="multiplicar">Multiplicar</button>
-        </div>
-      </div>
-    </div>
-  -->
-
-</div>
+  </div>
 </body>
 </html>
-
